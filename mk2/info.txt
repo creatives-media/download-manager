@@ -1,0 +1,6 @@
+Pentru butoane:
+    class default = "default"
+    class (default -> demo) = Info ca e doar un demo
+    class (default -> temp) = Pentru fisiere temporare
+
+Daca vrei sa faci un fisier expirat, schimba orice link in "expired". Sau poti sa scrii orice, dar pentru referinta, scrie "expired".

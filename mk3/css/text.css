@@ -1,0 +1,48 @@
+.text {
+    padding-top: 5%;
+}
+
+.text span {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#infoDl {
+    font-weight: 700;
+    font-size: 25px;
+    visibility: visible;
+}
+
+#thanks {
+    font-size: 15px;
+}
+
+/* Small PC Screen */
+@media only screen and (max-width:1376px) {  
+    .text {
+        padding-top: 5%;
+    }
+
+    #infoDl {
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    #thanks {
+        font-size: 12px;
+    }
+}
+
+/* Telefon */
+@media only screen and (max-width:768px) {
+    .text {
+        padding-top: 15%;
+    }
+
+    #infoDl {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
