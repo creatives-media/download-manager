@@ -23,6 +23,8 @@ window.onload = function downloadProcess() {
 
     // Timinng
     let mlsecond = 1000;
+    let dlFeedback = 3;
+    let timingInterval = 1;
 
     btns.style.display = "none";
 
@@ -33,38 +35,34 @@ window.onload = function downloadProcess() {
         console.log(dlId);
         let oneDrvDlAfterString = '/root/content';
 
-        setTimeout (function changeInfo() {
-            infoDl.innerHTML = "DOWNLOAD HAS STARTED ✔️";
-        }, mlsecond*3);
-        setTimeout (function closeWindow1() {
-            infoDl.innerHTML = "THIS WINDOW WILL CLOSE IN";
-            thanks.innerHTML = "5";
-        }, mlsecond*6);
-        setTimeout (function closeWindow2() {
-            thanks.innerHTML = "4";
-        }, mlsecond*7);
-        setTimeout (function closeWindow3() {
-            thanks.innerHTML = "3";
-        }, mlsecond*8);
-        setTimeout (function closeWindow4() {
-            thanks.innerHTML = "2";
-        }, mlsecond*9);
-        setTimeout (function closeWindow5() {
-            thanks.innerHTML = "1";
-        }, mlsecond*10);
-        setTimeout (function closeWindow6() {
-            thanks.innerHTML = "0";
-            window.open('','_self').close()
-        }, mlsecond*11);
-        setTimeout (function closeWindowErr() {
-            thanks.innerHTML = "If the window didn't close, please do it manually.";
-        }, mlsecond*12);
-
-        // Seconds until the download starts
+        // Download Process
         setTimeout (function finalDownload() {
             location.href = oneDrvDlString+dlId+oneDrvDlAfterString;
-            console.log('Download successfully started from ' + oneDrvDlString+dlId+oneDrvDlAfterString);
-        }, mlsecond*1)
+            setTimeout (function changeInfo() {
+                infoDl.innerHTML = "DOWNLOAD HAS STARTED ✔️";
+                console.log('Download successfully started from ' + oneDrvDlString+dlId+oneDrvDlAfterString);
+                setTimeout (function closeWindow1() {
+                    infoDl.innerHTML = "THIS WINDOW SHOULD CLOSE IN";
+                    thanks.innerHTML = "5";
+                    setTimeout (function closeWindow2() {
+                        thanks.innerHTML = "4";
+                        setTimeout (function closeWindow3() {
+                            thanks.innerHTML = "3";
+                            setTimeout (function closeWindow4() {
+                                thanks.innerHTML = "2";
+                                setTimeout (function closeWindow5() {
+                                    thanks.innerHTML = "1";
+                                    setTimeout (function closeWindow6() {
+                                        window.open('','_self').close()
+                                        thanks.innerHTML = "If the window didn't close, please do it manually.";
+                                    }, mlsecond*timingInterval);
+                                }, mlsecond*timingInterval);
+                            }, mlsecond*timingInterval);
+                        }, mlsecond*timingInterval);
+                    }, mlsecond*timingInterval);
+                }, mlsecond*dlFeedback);
+            }, mlsecond*dlFeedback);
+        }, mlsecond*timingInterval)
     }
     // For Direct Links
     else if (query.includes('t=direct')) {
@@ -73,38 +71,34 @@ window.onload = function downloadProcess() {
         let decodedId = atob(dlId);
         console.log(decodedId);
 
-        setTimeout (function changeInfo() {
-            infoDl.innerHTML = "DOWNLOAD HAS STARTED ✔️";
-        }, mlsecond*3);
-        setTimeout (function closeWindow1() {
-            infoDl.innerHTML = "THIS WINDOW WILL CLOSE IN";
-            thanks.innerHTML = "5";
-        }, mlsecond*6);
-        setTimeout (function closeWindow2() {
-            thanks.innerHTML = "4";
-        }, mlsecond*7);
-        setTimeout (function closeWindow3() {
-            thanks.innerHTML = "3";
-        }, mlsecond*8);
-        setTimeout (function closeWindow4() {
-            thanks.innerHTML = "2";
-        }, mlsecond*9);
-        setTimeout (function closeWindow5() {
-            thanks.innerHTML = "1";
-        }, mlsecond*10);
-        setTimeout (function closeWindow6() {
-            thanks.innerHTML = "0";
-            window.open('','_self').close()
-        }, mlsecond*11);
-        setTimeout (function closeWindowErr() {
-            thanks.innerHTML = "If the window didn't close, please do it manually.";
-        }, mlsecond*12);
-
-        // Seconds until the download starts
+        // Download Process
         setTimeout (function finalDownload() {
             location.href = 'https://'+decodedId;
-            console.log('Download successfully started from https://'+decodedId);
-        }, mlsecond*1)
+            setTimeout (function changeInfo() {
+                infoDl.innerHTML = "DOWNLOAD HAS STARTED ✔️";
+                console.log('Download successfully started from https://'+decodedId);
+                setTimeout (function closeWindow1() {
+                    infoDl.innerHTML = "THIS WINDOW SHOULD CLOSE IN";
+                    thanks.innerHTML = "5";
+                    setTimeout (function closeWindow2() {
+                        thanks.innerHTML = "4";
+                        setTimeout (function closeWindow3() {
+                            thanks.innerHTML = "3";
+                            setTimeout (function closeWindow4() {
+                                thanks.innerHTML = "2";
+                                setTimeout (function closeWindow5() {
+                                    thanks.innerHTML = "1";
+                                    setTimeout (function closeWindow6() {
+                                        window.open('','_self').close()
+                                        thanks.innerHTML = "If the window didn't close, please do it manually.";
+                                    }, mlsecond*timingInterval);
+                                }, mlsecond*timingInterval);
+                            }, mlsecond*timingInterval);
+                        }, mlsecond*timingInterval);
+                    }, mlsecond*timingInterval);
+                }, mlsecond*dlFeedback);
+            }, mlsecond*dlFeedback);
+        }, mlsecond*timingInterval)
     }
     // For Expired Links
     else if (query.includes('t=expired')) {
