@@ -54,9 +54,7 @@ window.onload = function downloadProcess() {
                                     thanks.innerHTML = "1";
                                     setTimeout (function closeWindow6() {
                                         window.open('','_self').close()
-                                        setTimeout (function closeWindow7() {
-                                            thanks.innerHTML = "If the window didn't close, please do it manually.";
-                                        }, mlsecond*timingInterval);
+                                        thanks.innerHTML = "If the window didn't close, please do it manually.";
                                     }, mlsecond*timingInterval);
                                 }, mlsecond*timingInterval);
                             }, mlsecond*timingInterval);
@@ -92,9 +90,7 @@ window.onload = function downloadProcess() {
                                     thanks.innerHTML = "1";
                                     setTimeout (function closeWindow6() {
                                         window.open('','_self').close()
-                                        setTimeout (function closeWindow7() {
-                                            thanks.innerHTML = "If the window didn't close, please do it manually.";
-                                        }, mlsecond*timingInterval);
+                                        thanks.innerHTML = "If the window didn't close, please do it manually.";
                                     }, mlsecond*timingInterval);
                                 }, mlsecond*timingInterval);
                             }, mlsecond*timingInterval);
@@ -159,7 +155,7 @@ function renew() {
     // Email Creation
     let mailProtocol = "mailto:";
     let mailReceiver = "photos@sebastian.ghiveci.com";
-    let mailSubject = "?subject=CONTENT RENEW&";
+    let mailSubject = "?subject=RENEW%20-%20Download%20Link&";
     let mailBody = "body=This%20Email%20was%20automatically%20generated%20by%20SG CREATIVES%20MEDIA%20-%20Download%20Manager.%0D%0A%0D%0A";
     let mailLink = "Content ID: "+contentID;
     let mailSpaceEnter = "%0D%0A";
