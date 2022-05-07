@@ -160,7 +160,7 @@ function renew() {
     let mailProtocol = "mailto:";
     let mailReceiver = "photos@sebastian.ghiveci.com";
     let mailSubject = "?subject=CONTENT RENEW&";
-    let mailBody = "body=This%20Email%20was%20automatically%20generated%20by%20SG CREATIVES%20MEDIA%20-%20Download%20Manager.%0D%0A%0D%0A";
+    let mailBody = "body=This%20Email%20was%20automatically%20generated%20by%20INOCULENS MEDIA%20-%20Download%20Manager.%0D%0A%0D%0A";
     let mailLink = "Content ID: "+contentID;
     let mailSpaceEnter = "%0D%0A";
     let mailFooter = "You%20just%20have%20to%20press%20send.%20The%20content%20should%20be%20renewed%20in%201-5%20working%20days.%0D%0AThank%20you%20for%20choosing%20me!";
@@ -178,15 +178,11 @@ function back() {
     let source = sourceExtractor.split('=').pop();
     console.log(source);
 
-    if (source === 'public.creatives-media.ghiveci.com') {
-        window.open('https://'+source,'_self').close();
-        console.log('Returned to SG CREATIVES MEDIA Public');
-    }
-    else if (source === 'photos.sebastian.ghiveci.com') {
+    if (source === 'photos.sebastian.ghiveci.com') {
         window.open('https://'+source,'_self').close();
         console.log('Returned to SEBASTIAN PHOTOS');
     }
-    else if (source === 'my-space.creatives-media.ghiveci.com') {
+    else if (source === 'my-space.sebastian.ghiveci.com') {
         window.open('https://'+source,'_self').close();
         console.log('Returned to MY SPACE');
     }
