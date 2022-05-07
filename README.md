@@ -9,7 +9,7 @@ This is the official manager used for handling user data across all INOCULENS ME
 ```
 - Updated the files to reflect the new name.
 - Documented the change log inside the README.md file.
-- Clarified how versions are counted. This is the real 1.2.1 release. The previews one is 1.2.0 and the release 1.1.1 is actually 1.1.0.
+- Clarified how versions are counted. This is the real 1.2.1 release. The previous one is 1.2.0 and the release 1.1.1 is actually 1.1.0.
 ```
 </div>
 
@@ -17,7 +17,7 @@ This is the official manager used for handling user data across all INOCULENS ME
 <b>Release 〢 1.2.1 (1.2.0)</b><br>
 
 ```
-- Made adjestmetns regarding the way the user should uderstand how the Download Manager should work.
+- Made adjustments regarding the way the user should understand how the Download Manager should work.
 ```
 </div>
 
@@ -25,7 +25,7 @@ This is the official manager used for handling user data across all INOCULENS ME
 <b>Release 〢 1.1.1 (1.1.0)</b><br>
 
 ```
-- Improvements were made for the way the downloads are procesed.
+- Improvements were made for the way the downloads are processed.
 ```
 </div>
 
@@ -33,7 +33,7 @@ This is the official manager used for handling user data across all INOCULENS ME
 <b>Release 〢 1.0.1</b><br>
 
 ```
-- The download animation was reloacated into the core file.
+- The download animation was relocated into the core file.
 ```
 </div>
 
