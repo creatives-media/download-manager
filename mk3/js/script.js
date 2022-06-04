@@ -140,9 +140,14 @@ window.onload = function downloadProcess() {
             infoDl.innerHTML = "TEMPORARY FILES CAN'T BE RENEWED.";
         };
     }
-    // For link alterations
+    // Fallback option for link alterations
     else {
-        location.href = 'https://cm.ghiveci.com/src/N8fh'
+        svg.style.display = "none";
+        btns.style.display = "block";
+        infoDl.innerHTML = "THIS DOWNLOAD IS INVALID";
+        thanks.innerHTML = "❌";
+        renewBtn.style.display = "none";
+        backBtn.style.display = "none";
     }
 };
 
@@ -158,7 +163,7 @@ function renew() {
     console.log(contentID);
     // Email Creation
     let mailProtocol = "mailto:";
-    let mailReceiver = "photos@sebastian.ghiveci.com";
+    let mailReceiver = "sebastian@inoculens.com";
     let mailSubject = "?subject=CONTENT RENEW&";
     let mailBody = "body=This%20Email%20was%20automatically%20generated%20by%20INOCULENS MEDIA%20-%20Download%20Manager.%0D%0A%0D%0A";
     let mailLink = "Content ID: "+contentID;
@@ -178,6 +183,7 @@ function back() {
     let source = sourceExtractor.split('=').pop();
     console.log(source);
 
+    // Returning locations based on the download source
     if (source === 'photos.sebastian.ghiveci.com') {
         window.open('https://'+source,'_self').close();
         console.log('Returned to SEBASTIAN PHOTOS');
@@ -190,8 +196,9 @@ function back() {
         window.open('https://'+source,'_self').close();
         console.log('Returned to SEBASTIAN RUSH');
     }
+    // Fallback option in case the source is invalid.
     else {
-        window.open('https://'+'cm.ghiveci.com/src/N8fh','_self').close();
+        window.open('https://'+'src.inoculens.com/ZwS','_self').close();
         console.log('The source is invalid and so the button has redireccted to the fallback option.');
     }
 };
