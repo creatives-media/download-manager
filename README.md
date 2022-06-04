@@ -4,6 +4,17 @@ This is the official manager used for handling user data across all INOCULENS ME
 
 ## Change Log<br>
 <div style="background-color: rgb(50, 50, 50);">
+<b>Release 〢 1.2.2</b><br>
+
+```
+- Updated the reporting email address for the expired links.
+- Updated the fallback links.
+- Updatedd logo redirect link.
+- Updated the app response in case of an altered link.
+```
+</div>
+
+<div style="background-color: rgb(50, 50, 50);">
 <b>Release 〢 1.2.1</b><br>
 
 ```
