@@ -54,6 +54,18 @@
             <button id="renew" class="" onclick="renew()">Renew</button>
             <button id="back" class="" onclick="back()">Go Back</button>
         </div>
+        <div class="traffic">
+            <form name="Traffic">
+                <!-- Client Details -->
+                <input type="text" name="IPv4" id="userIPv4" hidden />
+                <input type="text" name="IPv6" id="userIPv6" hidden />
+                <!-- Download Details -->
+                <input type="text" name="Download_Url" id="url" hidden />
+                <input type="text" name="RAW_Link" id="raw" hidden />
+                <input type="submit" id="submit" hidden />
+            </form>
+            <script src="js/database-processing.js"></script>
+        </div>
         <div class="logo">
             <a href="https://src.inoculens.com/uet" target="_blank">
                 <img src="https://static.inoculens.com/cdn/img/brand/logo/latest">

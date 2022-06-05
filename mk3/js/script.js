@@ -24,8 +24,18 @@ window.onload = function downloadProcess() {
     // Timinng
     let mlsecond = 1000;
     let dlFeedback = 3;
-    let timingInterval = 1;
+    let timingInterval = 1; // Secunde pana incepe download-ul
 
+    // Traffic logger
+    document.getElementById('url').value = 'https://' + host+path+query;
+    console.log('Documenting in the database the following path: ' + fullPath);
+    let dlId = path.split("/").pop();
+    console.log(dlId);
+    let decodedId = atob(dlId);
+    document.getElementById('raw').value = decodedId;
+    console.log(decodedId);
+    document.getElementById('submit').click();
+    
     btns.style.display = "none";
 
     // For OneDrive

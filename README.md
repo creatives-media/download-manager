@@ -4,6 +4,14 @@ This is the official manager used for handling user data across all INOCULENS ME
 
 ## Change Log<br>
 <div style="background-color: rgb(50, 50, 50);">
+<b>Release 〢 1.2.4</b><br>
+
+```
+- Implemented a more detailed download traffic tracking feature.
+```
+</div>
+
+<div style="background-color: rgb(50, 50, 50);">
 <b>Release 〢 1.2.3</b><br>
 
 ```
