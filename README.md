@@ -4,6 +4,14 @@ This is the official manager used for handling user data across all INOCULENS ME
 
 ## Change Log<br>
 <div style="background-color: rgb(50, 50, 50);">
+<b>Release 〢 1.2.3</b><br>
+
+```
+- Implemented the Google tag manager to better analyse the incoming traffic.
+```
+</div>
+
+<div style="background-color: rgb(50, 50, 50);">
 <b>Release 〢 1.2.2</b><br>
 
 ```
