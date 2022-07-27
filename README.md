@@ -4,6 +4,15 @@ This is the official manager used for handling user data across all INOCULENS ME
 
 ## Change Log<br>
 <div style="background-color: rgb(50, 50, 50);">
+<b>Release 〢 1.2.5</b><br>
+
+```
+- The manager can now track when a user is accessing a valid or expired download, as well as when the download link is either a demo, temporary file or altered (invalid).
+- Cleaned up the code.
+```
+</div>
+
+<div style="background-color: rgb(50, 50, 50);">
 <b>Release 〢 1.2.4</b><br>
 
 ```

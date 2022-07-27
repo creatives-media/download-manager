@@ -17,6 +17,7 @@ window.onload = function downloadProcess() {
     let btns = document.getElementById("btns");
     let renewBtn = document.getElementById("renew");
     let backBtn = document.getElementById("back");
+    btns.style.display = "none";
 
     // Path Report
     console.log(fullPath);
@@ -26,7 +27,7 @@ window.onload = function downloadProcess() {
     let dlFeedback = 3;
     let timingInterval = 1; // Secunde pana incepe download-ul
 
-    // Traffic logger
+    // Traffic Logger
     document.getElementById('url').value = 'https://' + host+path+query;
     console.log('Documenting in the database the following path: ' + fullPath);
     let dlId = path.split("/").pop();
@@ -34,9 +35,6 @@ window.onload = function downloadProcess() {
     let decodedId = atob(dlId);
     document.getElementById('raw').value = decodedId;
     console.log(decodedId);
-    document.getElementById('submit').click();
-    
-    btns.style.display = "none";
 
     // For OneDrive
     if (query.includes('t=1drv')) {
@@ -44,6 +42,10 @@ window.onload = function downloadProcess() {
         let dlId = path.split("/").pop();
         console.log(dlId);
         let oneDrvDlAfterString = '/root/content';
+
+        // Traffic Logger Process
+        document.getElementById('status').value = '1';
+        document.getElementById('submit').click();
 
         // Download Process
         setTimeout (function finalDownload() {
@@ -83,6 +85,10 @@ window.onload = function downloadProcess() {
         let decodedId = atob(dlId);
         console.log(decodedId);
 
+        // Traffic Logger Process
+        document.getElementById('status').value = '1';
+        document.getElementById('submit').click();
+
         // Download Process
         setTimeout (function finalDownload() {
             location.href = 'https://'+decodedId;
@@ -114,15 +120,12 @@ window.onload = function downloadProcess() {
             }, mlsecond*dlFeedback);
         }, mlsecond*timingInterval)
     }
-    // For Expired Links
-    else if (query.includes('t=expired')) {
-        svg.style.display = "none";
-        btns.style.display = "block";
-        infoDl.innerHTML = "THIS DOWNLOAD HAS EXPIRED";
-        thanks.innerHTML = "❌";
-    }
-    // For the Demo
+    // For Demo
     else if (query.includes('t=demo')) {
+        // Traffic Logger Process
+        document.getElementById('status').value = 'Demo';
+        document.getElementById('submit').click();
+
         svg.style.display = "none";
         btns.style.display = "block";
         infoDl.innerHTML = "THIS DOWNLOAD HAS EXPIRED";
@@ -140,6 +143,10 @@ window.onload = function downloadProcess() {
     }
     // For Temporary Files
     else if (query.includes('t=temp')) {
+        // Traffic Logger Process
+        document.getElementById('status').value = 'Temp';
+        document.getElementById('submit').click();
+
         svg.style.display = "none";
         btns.style.display = "block";
         infoDl.innerHTML = "THIS DOWNLOAD IS UNAVAILABLE";
@@ -150,8 +157,23 @@ window.onload = function downloadProcess() {
             infoDl.innerHTML = "TEMPORARY FILES CAN'T BE RENEWED.";
         };
     }
-    // Fallback option for link alterations
+    // For Expired Links
+    else if (query.includes('t=expired')) {
+        // Traffic Logger Process
+        document.getElementById('status').value = '0';
+        document.getElementById('submit').click();
+
+        svg.style.display = "none";
+        btns.style.display = "block";
+        infoDl.innerHTML = "THIS DOWNLOAD HAS EXPIRED";
+        thanks.innerHTML = "❌";
+    }
+    // Fallback for link alterations
     else {
+        // Traffic Logger Process
+        document.getElementById('status').value = 'Invalid';
+        document.getElementById('submit').click();
+
         svg.style.display = "none";
         btns.style.display = "block";
         infoDl.innerHTML = "THIS DOWNLOAD IS INVALID";
