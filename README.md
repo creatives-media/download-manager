@@ -1,85 +1,58 @@
 # <p align="center"><b>INOCULENS MEDIA</b> - Download Manager
 
-This is the official manager used for handling user data across all INOCULENS MEDIA platforms.<br><br>
+<p align="center">This is the official download manager used for handling user files across all INOCULENS MEDIA platforms.<br>
 
 ## Change Log<br>
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.2.5</b><br>
+<b>Release 〢 1.2.6 (mk3)</b>
 
-```
+- Small changes were made to adjust the app for the merge between SEBASTIAN PHOTOS and INOCULENS MEDIA.
+- Updated the versioning system to follow the [iVer concept](https://github.com/frontfacer/iVer).
+
+<b>Release 〢 1.2.5 (mk3)</b>
+
 - The manager can now track when a user is accessing a valid or expired download, as well as when the download link is either a demo, temporary file or altered (invalid).
 - Cleaned up the code.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.2.4</b><br>
+<b>Release 〢 1.2.4 (mk3)</b>
 
-```
 - Implemented a more detailed download traffic tracking feature.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.2.3</b><br>
+<b>Release 〢 1.2.3 (mk3)</b>
 
-```
 - Implemented the Google tag manager to better analyse the incoming traffic.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.2.2</b><br>
+<b>Release 〢 1.2.2 (mk3)</b>
 
-```
 - Updated the reporting email address for the expired links.
 - Updated the fallback links.
 - Updatedd logo redirect link.
 - Updated the app response in case of an altered link.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.2.1</b><br>
+<b>Release 〢 1.2.1 (mk3)</b>
 
-```
 - Updated the files to reflect the new name.
 - Documented the change log inside the README.md file.
 - Clarified how versions are counted. This is the real 1.2.1 release. The previous one is 1.2.0 and the release 1.1.1 is actually 1.1.0.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.2.1 (1.2.0)</b><br>
+<b>Release 〢 1.2.1 (1.2.0) (mk3)</b>
 
-```
 - Made adjustments regarding the way the user should understand how the Download Manager should work.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.1.1 (1.1.0)</b><br>
+<b>Release 〢 1.1.1 (1.1.0) (mk3)</b>
 
-```
 - Improvements were made for the way the downloads are processed.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.0.1</b><br>
+<b>Release 〢 1.0.1 (mk3)</b>
 
-```
 - The download animation was relocated into the core file.
-```
-</div>
 
-<div style="background-color: rgb(50, 50, 50);">
-<b>Release 〢 1.0.0</b><br>
+<b>Release 〢 1.0.0 (mk3)</b>
 
-```
 - The Download Manager has been released as an open source project. It is capable of processing requests coming from the control panel.
-```
-</div>
+
+<br>
+
+**This repository follows the [iVer](https://github.com/frontfacer/iVer) versioning format.*
 
 #
 <p align="center">© 2022 〣 INOCULENS MEDIA<br/>www.inoculens.com<br>

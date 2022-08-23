@@ -137,7 +137,7 @@ window.onload = function downloadProcess() {
             renewBtn.innerHTML = "Get Your Profile Here"
             backBtn.style.display = "none";
             renewBtn.onclick = function () {
-                location.href = "https://p.ghiveci.com/pricing";
+                location.href = "https://media.inoculens.com/pricing";
             };
         };
     }
@@ -216,21 +216,13 @@ function back() {
     console.log(source);
 
     // Returning locations based on the download source
-    if (source === 'photos.sebastian.ghiveci.com') {
+    if (source === 'media.inoculens.com') {
         window.open('https://'+source,'_self').close();
-        console.log('Returned to SEBASTIAN PHOTOS');
-    }
-    else if (source === 'my-space.sebastian.ghiveci.com') {
-        window.open('https://'+source,'_self').close();
-        console.log('Returned to MY SPACE');
-    }
-    else if (source === 'rush.sebastian.ghiveci.com') {
-        window.open('https://'+source,'_self').close();
-        console.log('Returned to SEBASTIAN RUSH');
+        console.log('Returned to INOCULENS MEDIA');
     }
     // Fallback option in case the source is invalid.
     else {
-        window.open('https://'+'src.inoculens.com/ZwS','_self').close();
+        window.open('https://src.inoculens.com/fiG','_self').close();
         console.log('The source is invalid and so the button has redireccted to the fallback option.');
     }
 };
