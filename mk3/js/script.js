@@ -8,7 +8,7 @@ let fullPath = protocol+host+path+query;
 window.onload = function downloadProcess() {
     // Main text
     let infoDl = document.getElementById("infoDl");
-    let thanks = document.getElementById("thanks");
+    let infoDl2 = document.getElementById("infoDl2");
 
     // Animation
     let svg = document.getElementById("svg");
@@ -51,23 +51,24 @@ window.onload = function downloadProcess() {
         setTimeout (function finalDownload() {
             location.href = oneDrvDlString+dlId+oneDrvDlAfterString;
             setTimeout (function changeInfo() {
-                infoDl.innerHTML = "DOWNLOAD HAS STARTED ✔️";
+                infoDl.innerHTML = "DOWNLOAD HAS STARTED";
+                infoDl2.innerHTML = "✔️";
                 console.log('Download successfully started from ' + oneDrvDlString+dlId+oneDrvDlAfterString);
                 setTimeout (function closeWindow1() {
                     infoDl.innerHTML = "THIS WINDOW SHOULD CLOSE IN";
-                    thanks.innerHTML = "5";
+                    infoDl2.innerHTML = "5";
                     setTimeout (function closeWindow2() {
-                        thanks.innerHTML = "4";
+                        infoDl2.innerHTML = "4";
                         setTimeout (function closeWindow3() {
-                            thanks.innerHTML = "3";
+                            infoDl2.innerHTML = "3";
                             setTimeout (function closeWindow4() {
-                                thanks.innerHTML = "2";
+                                infoDl2.innerHTML = "2";
                                 setTimeout (function closeWindow5() {
-                                    thanks.innerHTML = "1";
+                                    infoDl2.innerHTML = "1";
                                     setTimeout (function closeWindow6() {
                                         window.open('','_self').close()
                                         setTimeout (function closeWindow7() {
-                                            thanks.innerHTML = "If the window didn't close, please do it manually.";
+                                            infoDl2.innerHTML = "If the window didn't close, please do it manually.";
                                         }, mlsecond*timingInterval);
                                     }, mlsecond*timingInterval);
                                 }, mlsecond*timingInterval);
@@ -93,23 +94,24 @@ window.onload = function downloadProcess() {
         setTimeout (function finalDownload() {
             location.href = 'https://'+decodedId;
             setTimeout (function changeInfo() {
-                infoDl.innerHTML = "DOWNLOAD HAS STARTED ✔️";
+                infoDl.innerHTML = "DOWNLOAD HAS STARTED";
+                infoDl2.innerHTML = "✔️";
                 console.log('Download successfully started from https://'+decodedId);
                 setTimeout (function closeWindow1() {
                     infoDl.innerHTML = "THIS WINDOW SHOULD CLOSE IN";
-                    thanks.innerHTML = "5";
+                    infoDl2.innerHTML = "5";
                     setTimeout (function closeWindow2() {
-                        thanks.innerHTML = "4";
+                        infoDl2.innerHTML = "4";
                         setTimeout (function closeWindow3() {
-                            thanks.innerHTML = "3";
+                            infoDl2.innerHTML = "3";
                             setTimeout (function closeWindow4() {
-                                thanks.innerHTML = "2";
+                                infoDl2.innerHTML = "2";
                                 setTimeout (function closeWindow5() {
-                                    thanks.innerHTML = "1";
+                                    infoDl2.innerHTML = "1";
                                     setTimeout (function closeWindow6() {
                                         window.open('','_self').close()
                                         setTimeout (function closeWindow7() {
-                                            thanks.innerHTML = "If the window didn't close, please do it manually.";
+                                            infoDl2.innerHTML = "If the window didn't close, please do it manually.";
                                         }, mlsecond*timingInterval);
                                     }, mlsecond*timingInterval);
                                 }, mlsecond*timingInterval);
@@ -129,11 +131,11 @@ window.onload = function downloadProcess() {
         svg.style.display = "none";
         btns.style.display = "block";
         infoDl.innerHTML = "THIS DOWNLOAD HAS EXPIRED";
-        thanks.innerHTML = "❌";
+        infoDl2.innerHTML = "❌";
         renewBtn.onclick = function () {
             infoDl.style.color = "#FF8E36";
             infoDl.innerHTML = "THIS WAS JUST A DEMO.";
-            thanks.innerHTML = "You should have a real profile to make this work.";
+            infoDl2.innerHTML = "You should have a real profile to make this work.";
             renewBtn.innerHTML = "Get Your Profile Here"
             backBtn.style.display = "none";
             renewBtn.onclick = function () {
@@ -150,7 +152,7 @@ window.onload = function downloadProcess() {
         svg.style.display = "none";
         btns.style.display = "block";
         infoDl.innerHTML = "THIS DOWNLOAD IS UNAVAILABLE";
-        thanks.innerHTML = "This was just a temporary file.";
+        infoDl2.innerHTML = "This was just a temporary file.";
         renewBtn.style.cursor = "not-allowed";
         renewBtn.onclick = function () {
             infoDl.style.color = "#FF8E36";
@@ -166,7 +168,7 @@ window.onload = function downloadProcess() {
         svg.style.display = "none";
         btns.style.display = "block";
         infoDl.innerHTML = "THIS DOWNLOAD HAS EXPIRED";
-        thanks.innerHTML = "❌";
+        infoDl2.innerHTML = "❌";
     }
     // Fallback for link alterations
     else {
@@ -177,7 +179,7 @@ window.onload = function downloadProcess() {
         svg.style.display = "none";
         btns.style.display = "block";
         infoDl.innerHTML = "THIS DOWNLOAD IS INVALID";
-        thanks.innerHTML = "❌";
+        infoDl2.innerHTML = "❌";
         renewBtn.style.display = "none";
         backBtn.style.display = "none";
     }

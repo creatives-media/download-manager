@@ -3,6 +3,14 @@
 <p align="center">This is the official download manager used for handling user files across all INOCULENS MEDIA platforms.<br>
 
 ## Change Log<br>
+<b>Release 〢 1.2.7 (mk3)</b>
+
+- Adapted the app to work without the mark notation in the url.
+- Adjusted the way the app sends feedback to the user.
+- Cleaned the app structure.
+- Changed the app title.
+- Changed the footer.
+
 <b>Release 〢 1.2.6 (mk3)</b>
 
 - Small changes were made to adjust the app for the merge between SEBASTIAN PHOTOS and INOCULENS MEDIA.
