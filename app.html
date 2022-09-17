@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Config -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- SEO -->
+        <title>INOCULENS MEDIA - Download Manager</title>
+        <meta name="robots" content="noindex">
+        <meta name="googlebot" content="noindex">
+        <meta name="description" content="Click here to start the download.">
+
+        <!-- FAV ICON -->
+        <link rel="shortcut icon" type="image/png" href="https://static.inoculens.com/logo">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JS -->
+        <script src="js/script.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y642DBE6CP"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Y642DBE6CP');
+        </script>
+    </head>
+    
+    <body> 
+        <div class="text">
+            <span>
+                <p id="infoDl" class="">YOUR DOWNLOAD IS STARTING...</p>
+                <p id="infoDl2" class=""></p>
+            </span>
+        </div>
+        <div class="loading-aimation" id="svg">
+            <svg width="200" height="200" viewBox="0 0 100 100">
+                <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+                <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+                <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+                <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+            </svg>
+        </div>
+        <div class="btns" id="btns">
+            <button id="renew" class="" onclick="renew()">Renew</button>
+            <button id="back" class="" onclick="back()">Go Back</button>
+        </div>
+        <div class="traffic">
+            <form name="Traffic">
+                <!-- Client Details -->
+                <input type="text" name="IPv4" id="userIPv4" hidden />
+                <input type="text" name="IPv6" id="userIPv6" hidden />
+                <!-- Download Details -->
+                <input type="text" name="Download_Url" id="url" hidden />
+                <input type="text" name="RAW_Link" id="raw" hidden />
+                <input type="text" name="Status" id="status" hidden />
+                <input type="submit" id="submit" hidden />
+            </form>
+            <script src="js/database-processing.js"></script>
+        </div>
+        <div class="logo">
+            <a href="https://src.inoculens.com/GiR" target="_blank">
+                <img src="https://static.inoculens.com/logo">
+            </a>
+            <p>INOCULENS MEDIA</p>
+        </div>
+    </body>
+</html>

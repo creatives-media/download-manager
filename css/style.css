@@ -1,4 +1,4 @@
-@import url('https://gocdn.frontfacer.com/fonts/google.css');
+@import url('https://gocdn.frontfacer.com/fonts/global.css');
 
 body {
     background-color: black;
@@ -10,4 +10,265 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/* =================== Text =================== */
+.text {
+    padding-top: 5%;
+}
+
+.text span {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#infoDl {
+    font-weight: 700;
+    font-size: 25px;
+    visibility: visible;
+}
+
+#thanks {
+    font-size: 15px;
+}
+
+/* Small PC Screen */
+@media only screen and (max-width:1376px) {  
+    .text {
+        padding-top: 5%;
+    }
+
+    #infoDl {
+        font-weight: 700;
+        font-size: 17px;
+    }
+
+    #thanks {
+        font-size: 12px;
+    }
+}
+
+/* Telefon */
+@media only screen and (max-width:768px) {
+    .text {
+        padding-top: 15%;
+    }
+
+    #infoDl {
+        font-weight: 700;
+        font-size: 20px;
+    }
+}
+
+/* =================== Buttons =================== */
+.btns {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#renew, #back {
+    margin: 10px;
+}
+
+button {
+    background-color: #0000;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(70, 70, 70);
+}
+
+/* Small PC Screen */
+@media only screen and (max-width:1376px) {
+    .btns {
+        padding-top: 40px;
+    }
+
+    #renew, #back {
+        margin: 5px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 7px 17px;
+    }
+}
+
+/* Telefon */
+@media only screen and (max-width:768px) {
+    .btns {
+        padding-top: 80px;
+    }
+
+    #renew, #back {
+        margin: 5px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 5px 17px;
+    }
+}
+
+/* =================== Loading Animation =================== */
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 200px;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(1);
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
+  
+.stroke-still {
+    stroke: #232323;
+}
+  
+.stroke-animation {
+    -webkit-animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+            animation: stroke-spacing 1.2s ease-in, stroke-color 4.8s linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+}
+  
+@-webkit-keyframes stroke-spacing {
+    0% {
+        stroke-dasharray: 0 200;
+    }
+    45% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 200 200;
+    }
+    90% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+    100% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+}
+
+@keyframes stroke-spacing {
+    0% {
+        stroke-dasharray: 0 200;
+    }
+    45% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 200 200;
+    }
+    90% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+    100% {
+        stroke-dashoffset: -200;
+        stroke-dasharray: 200 200;
+    }
+}
+
+@-webkit-keyframes stroke-color {
+    0%  { stroke: #3498DB; }
+    24% { stroke: #643232; }
+    25% { stroke: #327864; }
+    49% { stroke: #327864; }
+    50% { stroke: #32326e; }
+    74% { stroke: #32326e; }
+    75% { stroke: #78325a; }
+    99% { stroke: #78325a; }
+}
+
+@keyframes stroke-color {
+    0%  { stroke: #3498DB; }
+    24% { stroke: #643232; }
+    25% { stroke: #327864; }
+    49% { stroke: #327864; }
+    50% { stroke: #32326e; }
+    74% { stroke: #32326e; }
+    75% { stroke: #78325a; }
+    99% { stroke: #78325a; }
+}
+  
+/* Small PC Screen */
+@media only screen and (max-width:1376px) {
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 140px;
+        width: 140px;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(1);
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+}
+
+/* Telefon */
+@media only screen and (max-width:768px) {
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 150px;
+        width: 150px;
+        -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(1);
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+    }
+}
+
+/* =================== Logo =================== */
+.logo {
+    position: fixed;
+    left: 0px;
+    bottom: 4%;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    padding-right: 1px;
+    width: 70px;
+}
+
+/* Small PC Screen */
+@media only screen and (max-width:1376px) {
+    .logo {
+        position: fixed;
+        left: 0px;
+        bottom: 4%;
+        width: 100%;
+        background-color: transparent;
+        color: white;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    img {
+        padding-right: 1px;
+        width: 55px;
+    }
 }
