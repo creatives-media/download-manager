@@ -3,6 +3,10 @@
 <p align="center">This is the official download manager used for handling user files across all INOCULENS MEDIA platforms.<br>
 
 ## Change Log<br>
+<b>Release 〢 1.2.7 (mk3) | Build 1</b>
+
+- Fixed spelling mistake in README.md file.
+
 <b>Release 〢 1.2.7 (mk3)</b>
 
 - Adapted the app to work without the mark notation in the url.
@@ -33,7 +37,7 @@
 
 - Updated the reporting email address for the expired links.
 - Updated the fallback links.
-- Updatedd logo redirect link.
+- Updated logo redirect link.
 - Updated the app response in case of an altered link.
 
 <b>Release 〢 1.2.1 (mk3)</b>
