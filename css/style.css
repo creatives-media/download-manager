@@ -251,7 +251,7 @@ svg {
 
 img {
     padding-right: 1px;
-    width: 70px;
+    width: 90px;
 }
 
 /* Small PC Screen */
@@ -269,6 +269,6 @@ img {
 
     img {
         padding-right: 1px;
-        width: 55px;
+        width: 90px;
     }
 }
