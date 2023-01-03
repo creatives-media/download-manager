@@ -1,8 +1,4 @@
-[<img
-  src="https://static.inoculens.com/logo"
-  alt="INOCULENS Logo"
-  title="INOCULENS"
-  style="display: block; margin: 0 auto; max-width: 100px" />](href="https://www.inoculens.com")
+<p align="center"><img src="https://static.inoculens.com/logo" width="100" height="100" />
 
 # <p align="center"><b>INOCULENS</b>
 
@@ -10,6 +6,10 @@
 This is the official download manager used for handling user files across all INOCULENS platforms.<br><br><br>
 
 ## <b>Change Log:</b><br><br>
+<b>Release 〢 1.2.9 (mk3) | Build 1</b>
+
+- Adjusted logo styling on README.md document.
+
 <b>Release 〢 1.2.9 (mk3)</b>
 
 - Updated the database to label the inputs for the year 2023.
