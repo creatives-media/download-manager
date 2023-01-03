@@ -1,8 +1,22 @@
-# <p align="center"><b>INOCULENS MEDIA</b> - Download Manager
+[<img
+  src="https://static.inoculens.com/logo"
+  alt="INOCULENS Logo"
+  title="INOCULENS"
+  style="display: block; margin: 0 auto; max-width: 100px" />](href="https://www.inoculens.com")
 
-<p align="center">This is the official download manager used for handling user files across all INOCULENS MEDIA platforms.<br>
+# <p align="center"><b>INOCULENS</b>
 
-## Change Log<br>
+<p align="center"><b>Download Manager</b><br><br>
+This is the official download manager used for handling user files across all INOCULENS platforms.<br><br><br>
+
+## <b>Change Log:</b><br><br>
+<b>Release 〢 1.2.9 (mk3)</b>
+
+- Updated the database to label the inputs for the year 2023.
+- Adjusted the email text in the "renew download" feature.
+- Adjusted the brand name from INOCULENS MEDIA to INOCULENS.
+- Redesigned the README.md document.
+
 <b>Release 〢 1.2.8 (mk3)</b>
 
 - Adjusted the title name to reflect the brand.
@@ -73,4 +87,4 @@
 **This repository follows the [iVer](https://github.com/frontfacer/iVer) versioning format.*
 
 #
-<p align="center">© 2022 〣 INOCULENS MEDIA<br/>www.inoculens.com<br>
+<p align="center">© 2022 〣 INOCULENS<br/>www.inoculens.com<br>
