@@ -6,6 +6,10 @@
 This is the official download manager used for handling user files across all INOCULENS platforms.<br><br><br>
 
 ## <b>Change Log:</b><br><br>
+<b>Release 〢 1.2.10 (mk3)</b>
+
+- Changed the recipient email address for Content Renew.
+
 <b>Release 〢 1.2.9 (mk3) | Build 1</b>
 
 - Adjusted logo styling on README.md document.

@@ -197,7 +197,7 @@ function renew() {
     console.log(contentID);
     // Email Creation
     let mailProtocol = "mailto:";
-    let mailReceiver = "sebastian@inoculens.com";
+    let mailReceiver = "create@inoculens.com";
     let mailSubject = "?subject=CONTENT RENEW&";
     let mailBody = "body=This%20email%20was%20automatically%20generated%20by%20INOCULENS MEDIA%20-%20Download%20Manager.%0D%0A%0D%0A";
     let mailLink = "Content ID: "+contentID;
