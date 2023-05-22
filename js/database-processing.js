@@ -1,5 +1,5 @@
 // Procesarea bazei de date
-const scriptURL = 'https://script.google.com/macros/s/AKfycbym4ppg0QmQGBOioptp-fvBC3ncsIePC5YSZK0y5fr5Fhd-f_UiCYbKHG_HIPuf0OCs/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyh-FOIr70R4bEWFMbQgiFAN_XLzl_B-hXEF0x8piCVsshE9SfTrroWtQv3wV1Y7d92/exec'
 const form = document.forms['Traffic']
 
 // Trimite inputul catre baza de date

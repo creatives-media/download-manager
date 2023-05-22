@@ -6,6 +6,12 @@
 This is the official download manager used for handling user files across all INOCULENS platforms.<br><br><br>
 
 ## <b>Change Log:</b><br><br>
+<b>Release 〢 1.2.11 (mk3)</b>
+
+- Updated the database location to the DEV environment.
+- Updated the FAV icon of the app.
+- Adjusted the README.md file to represent INOCULENS legal starting date.
+
 <b>Release 〢 1.2.10 (mk3)</b>
 
 - Changed the recipient email address for Content Renew.
@@ -91,4 +97,4 @@ This is the official download manager used for handling user files across all IN
 **This repository follows the [iVer](https://github.com/frontfacer/iVer) versioning format.*
 
 #
-<p align="center">© 2022 〣 INOCULENS<br/>www.inoculens.com<br>
+<p align="center">© 2023 〣 INOCULENS<br/>www.inoculens.com<br>
